@@ -1,0 +1,10 @@
+This contains so called 'vendorized' libraries that enstaller depends on and
+don't want to ship separately.
+
+You should NOT modify the code in there except to make it work as a bundled library.
+
+Updating a vendorized library
+=============================
+
+Update the vendors.txt and simply type make in the directory containing this
+file.
