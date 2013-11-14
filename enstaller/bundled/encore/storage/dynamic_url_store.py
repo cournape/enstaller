@@ -10,7 +10,7 @@ import json
 import urllib
 import rfc822
 
-import requests
+from enstaller.bundled import requests
 
 from .abstract_store import AbstractAuthorizingStore, Value, AuthorizationError
 from .utils import DummyTransactionContext

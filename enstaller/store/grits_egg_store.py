@@ -1,7 +1,7 @@
-import requests
 import json
 
-from encore.storage.dynamic_url_store import DynamicURLStore
+from enstaller.bundled.encore.storage.dynamic_url_store import DynamicURLStore
+from enstaller.bundled import requests
 
 from enstaller import plat
 from email.utils import formatdate
