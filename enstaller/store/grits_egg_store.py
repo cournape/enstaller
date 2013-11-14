@@ -4,6 +4,17 @@ import json
 from encore.storage.dynamic_url_store import DynamicURLStore
 
 from enstaller import plat
+from email.utils import formatdate
+
+def clean_url(url):
+    ''' Strip trailing slash from urls.
+        Adds /api to end of urls if they don't have it.
+    '''
+    url = url.rstrip('/')
+    if not url.endswith('/api'):
+        url += '/api'
+    return url
+
 
 class GritsClientStore(DynamicURLStore):
     ''' Copied from grits_client.storage.client_store '''
