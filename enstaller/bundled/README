@@ -8,3 +8,5 @@ Updating a vendorized library
 
 Update the vendors.txt and simply type make in the directory containing this
 file.
+
+Note: encore is not bundled automatically yet.
